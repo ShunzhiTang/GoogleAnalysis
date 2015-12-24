@@ -13,6 +13,10 @@
 		242E9CA51C2BE4B800C6C5F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242E9CA31C2BE4B800C6C5F7 /* Main.storyboard */; };
 		242E9CA71C2BE4B800C6C5F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242E9CA61C2BE4B800C6C5F7 /* Assets.xcassets */; };
 		242E9CAA1C2BE4B800C6C5F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242E9CA81C2BE4B800C6C5F7 /* LaunchScreen.storyboard */; };
+		242E9CB91C2BE60500C6C5F7 /* libGoogleConversionTracking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 242E9CB71C2BE60500C6C5F7 /* libGoogleConversionTracking.a */; };
+		242E9CBA1C2BE60500C6C5F7 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 242E9CB81C2BE60500C6C5F7 /* README.txt */; };
+		242E9CBC1C2BE64800C6C5F7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242E9CBB1C2BE64800C6C5F7 /* AdSupport.framework */; };
+		242E9CBE1C2BF60200C6C5F7 /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242E9CBD1C2BF60200C6C5F7 /* AppsFlyerLib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		242E9CA61C2BE4B800C6C5F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		242E9CA91C2BE4B800C6C5F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		242E9CAB1C2BE4B800C6C5F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		242E9CB21C2BE60500C6C5F7 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		242E9CB41C2BE60500C6C5F7 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		242E9CB61C2BE60500C6C5F7 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		242E9CB71C2BE60500C6C5F7 /* libGoogleConversionTracking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleConversionTracking.a; sourceTree = "<group>"; };
+		242E9CB81C2BE60500C6C5F7 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		242E9CBB1C2BE64800C6C5F7 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		242E9CBD1C2BF60200C6C5F7 /* AppsFlyerLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppsFlyerLib.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242E9CBC1C2BE64800C6C5F7 /* AdSupport.framework in Frameworks */,
+				242E9CBE1C2BF60200C6C5F7 /* AppsFlyerLib.framework in Frameworks */,
+				242E9CB91C2BE60500C6C5F7 /* libGoogleConversionTracking.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +56,9 @@
 		242E9C8E1C2BE4B800C6C5F7 = {
 			isa = PBXGroup;
 			children = (
+				242E9CBD1C2BF60200C6C5F7 /* AppsFlyerLib.framework */,
+				242E9CBB1C2BE64800C6C5F7 /* AdSupport.framework */,
+				242E9CB11C2BE60500C6C5F7 /* GoogleConversionTrackingSDK-iOS-3.2.0 */,
 				242E9C991C2BE4B800C6C5F7 /* GoogleAnalysis */,
 				242E9C981C2BE4B800C6C5F7 /* Products */,
 			);
@@ -77,6 +94,34 @@
 				242E9C9B1C2BE4B800C6C5F7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		242E9CB11C2BE60500C6C5F7 /* GoogleConversionTrackingSDK-iOS-3.2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				242E9CB21C2BE60500C6C5F7 /* ACTReporter.h */,
+				242E9CB31C2BE60500C6C5F7 /* Deprecated */,
+				242E9CB51C2BE60500C6C5F7 /* DoubleClick */,
+				242E9CB71C2BE60500C6C5F7 /* libGoogleConversionTracking.a */,
+				242E9CB81C2BE60500C6C5F7 /* README.txt */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.2.0";
+			sourceTree = "<group>";
+		};
+		242E9CB31C2BE60500C6C5F7 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				242E9CB41C2BE60500C6C5F7 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		242E9CB51C2BE60500C6C5F7 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				242E9CB61C2BE60500C6C5F7 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +183,7 @@
 			files = (
 				242E9CAA1C2BE4B800C6C5F7 /* LaunchScreen.storyboard in Resources */,
 				242E9CA71C2BE4B800C6C5F7 /* Assets.xcassets in Resources */,
+				242E9CBA1C2BE60500C6C5F7 /* README.txt in Resources */,
 				242E9CA51C2BE4B800C6C5F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +262,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-Objc";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -253,6 +300,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-Objc";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -263,8 +311,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = GoogleAnalysis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleConversionTrackingSDK-iOS-3.2.0",
+				);
+				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sixiang.GoogleAnalysis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -274,8 +331,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = GoogleAnalysis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleConversionTrackingSDK-iOS-3.2.0",
+				);
+				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sixiang.GoogleAnalysis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
